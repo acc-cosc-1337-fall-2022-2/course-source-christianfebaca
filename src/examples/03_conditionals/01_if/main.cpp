@@ -8,15 +8,31 @@ int main()
 {
 	//create a bool variable named even
 	//create an int variable named value
+	auto overtime = false;
+	auto hours = 0.1;
 
 	//prompt user for a keyboard number
 	//assign the number to the value variable
+	cout<<"Enter hours: ";
+	cin>>hours;
+
 
 	//call the is_even function with value as its argument
 	//and assign its return value to the even variable
+	overtime = is_overtime(hours);
+
 	
 
 	//display even if number is even
+	if(overtime)
+	{
+		cout<<"Hours: "<<hours<<" qualifies for overtime\n";
+
+	}
+	else
+	{
+		cout<<"Hours: "<<hours<<" does not qualify for overtime\n"
+	}
 
 
 	return 0;
